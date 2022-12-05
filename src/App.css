@@ -1,38 +1,140 @@
-.App {
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage-wrapper {
+  display: block;
+  padding-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homepage-footer--desktop {
+  position: absolute;
+  bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage-footer--mobile {
+  position: block;
+}
+
+.homepage-footer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Alatsi", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.homepage-footer--title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.homepage-footer--mail,
+.homepage-footer--phone,
+.homepage-footer--address {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.homepage-footer--mail:hover,
+.homepage-footer--phone:hover {
+  text-decoration: underline;
+}
+
+.homepage-footer-container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.homepage-footer-wrapper {
+  padding-bottom: 10px;
+}
+
+.homepage-socialmedia {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.homepage-socialmedia--link {
+  padding-right: 40px;
+}
+
+.homepage-container--title {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.homepage-container--info {
+  font-family: "Alatsi", sans-serif;
+}
+
+.homepage-container--text {
+  font-size: 1.7rem;
+  padding-bottom: 10px;
+}
+
+.homepage-container--days,
+.homepage-container--time {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.homepage-container--menu {
+  padding-top: 10px;
+}
+
+.homepage-container--booking {
+  padding: 10px;
+  border-radius: 20px;
+  width: 150px;
+  background-color: black;
   color: white;
+  font-weight: bold;
+  margin: auto;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.homepage-container--booking:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.homepage-footer--creator {
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .homepage-footer {
+    width: 100%;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .homepage-footer {
+    position: inherit;
   }
 }
+
+/* 
+@media (prefers-color-scheme: dark) {
+  .card,
+}  */
